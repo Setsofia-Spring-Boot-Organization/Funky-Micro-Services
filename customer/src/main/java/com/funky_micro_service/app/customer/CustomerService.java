@@ -3,7 +3,7 @@ package com.funky_micro_service.app.customer;
 import org.springframework.stereotype.Service;
 
 @Service
-public record CustomerService() {
+public record CustomerService(CustomerRepository customerRepository) {
 
     public void creatNewCustomer(CustomerRegistrationRequest request) {
         Customer customer = Customer.builder()
@@ -11,5 +11,7 @@ public record CustomerService() {
                 .lastname(request.lastname())
                 .email(request.email())
                 .build();
+
+        customerRepository.save(customer);
     }
 }
