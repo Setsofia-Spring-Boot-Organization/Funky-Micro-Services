@@ -6,10 +6,14 @@
   <groupId>com.funkydeveloper.app</groupId>
   <artifactId>funky-services</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <name>funky-services</name>
   <!-- FIXME change it to the project's website -->
   <url>https://www.example.com</url>
+  <modules>
+    <module>customer</module>
+  </modules>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
