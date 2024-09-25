@@ -1,13 +1,15 @@
 package com.funkydeveloper.fraud.fraud;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
 @Service
-public record FraudCheckService(
-        FraudCheckHistoryRepository fraudCheckHistoryRepository
-) {
+@RequiredArgsConstructor
+public class FraudCheckService {
+
+    private final FraudCheckHistoryRepository fraudCheckHistoryRepository;
 
     // check if the customer is fraudulent
     public boolean isFraudulentCustomer(Integer customerId) {
