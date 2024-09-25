@@ -1,4 +1,4 @@
-package com.funky_micro_service.app.customer;
+package com.funkydeveloper.customer.customer;
 
 import org.springframework.stereotype.Service;
 
