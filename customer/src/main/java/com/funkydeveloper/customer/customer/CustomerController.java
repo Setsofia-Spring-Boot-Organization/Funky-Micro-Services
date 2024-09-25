@@ -1,4 +1,4 @@
-package com.funky_micro_service.app.customer;
+package com.funkydeveloper.customer.customer;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
