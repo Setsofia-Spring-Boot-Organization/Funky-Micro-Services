@@ -1,4 +1,4 @@
-package com.funky_micro_service.app;
+package com.funkydeveloper.customer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

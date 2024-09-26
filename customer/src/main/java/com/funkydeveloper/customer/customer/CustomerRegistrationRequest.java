@@ -1,4 +1,4 @@
-package com.funky_micro_service.app.customer;
+package com.funkydeveloper.customer.customer;
 
 public record CustomerRegistrationRequest(
         String firstname,
