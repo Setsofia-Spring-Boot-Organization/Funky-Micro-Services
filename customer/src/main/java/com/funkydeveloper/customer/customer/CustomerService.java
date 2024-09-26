@@ -21,7 +21,7 @@ public class CustomerService {
         customerRepository.saveAndFlush(customer);
 
         boolean isFraudulentCustomer = Boolean.TRUE.equals(restTemplate.getForObject(
-                "http://localhost:8081/api/v1/fraud-check/{{customerId}}",
+                "http://localhost:8081/api/v1/fraud-check/{customerId}",
                 Boolean.class,
                 customer.getId()
         ));
